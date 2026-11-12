@@ -1,0 +1,31 @@
+MI MATERIAL — tu carpeta para subir cosas sin tocar el código
+==============================================================
+
+Aquí guardas tu material. La app lo muestra en la pestaña «Mi material».
+Puedes subir todo lo que quieras: el código de la app está en otras carpetas y no se toca.
+
+  imagenes/   Ilustraciones, fotos, fondos de tablero, dorsos (.jpg, .png, .webp).
+  juegos/     Juegos completos que exportas desde la app (archivos .json).
+
+
+CÓMO SUBIR UNA IMAGEN EN GITHUB
+1. Entra a tu repositorio en github.com.
+2. Abre la carpeta  mi-material  y luego  imagenes.
+3. Pulsa «Add file» → «Upload files».
+4. Arrastra tus imágenes y pulsa «Commit changes» (el botón verde).
+5. Espera 1 o 2 minutos y recarga la app. En «Mi material» pulsa «Actualizar».
+
+CÓMO GUARDAR UN JUEGO PARA REUTILIZARLO
+1. En la app, pestaña «Juegos», pulsa el botón de descarga del juego.
+2. Sube ese archivo a  mi-material/juegos  igual que una imagen.
+3. En «Mi material» verás el juego. Con «+» agregas sus piezas al juego abierto.
+
+CONSEJOS
+- Usa nombres claros: el nombre del archivo es el nombre que verás en la app.
+  Ejemplo: dorso-mitos-de-america.jpg  →  «dorso mitos de america»
+- Evita imágenes enormes. Hasta 3 o 4 MB por imagen está bien.
+- Sube solo material tuyo o con permiso, porque el repositorio es público.
+- Para borrar algo: abre el archivo en GitHub, pulsa los tres puntos (…) y elige «Delete file».
+
+EN TU COMPUTADOR (sin internet)
+Abre la app, ve a «Mi material» y pulsa «Abrir carpeta». Elige esta carpeta mi-material.

@@ -1,0 +1,9 @@
+# Lista de tu material.
+# En GitHub NO necesitas este archivo: la app ve sola lo que subas a las carpetas.
+# Solo sirve si algún día publicas la app en otro lugar. Ahí, escribe un archivo por línea.
+imagenes/carta-ornamental.jpg
+imagenes/mapa-hexagonal.jpg
+imagenes/tablero-circular.jpg
+juegos/refranes-busca-tu-otra-mitad.estudio-ep.json
+juegos/corazon-de-barrio.json
+juegos/el-archivo-de-las-sombras.json

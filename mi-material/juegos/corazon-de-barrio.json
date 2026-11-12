@@ -1,0 +1,835 @@
+﻿{
+    "fichas":  [
+                   {
+                       "don":  "Mueve su ficha a la zona que el grupo elija",
+                       "imagen":  "FichaCartografe.jpg",
+                       "nombre":  "Cartografe",
+                       "id":  "F01"
+                   },
+                   {
+                       "don":  "Cede su turno de \u0027Voz\u0027 a otra persona",
+                       "imagen":  "FichaTejedore.jpg",
+                       "nombre":  "Tejedore",
+                       "id":  "F02"
+                   },
+                   {
+                       "don":  "Recupera 1 Token de Cuidado",
+                       "imagen":  "FichaGuardiana.jpg",
+                       "nombre":  "Guardiana del Agua",
+                       "id":  "F03"
+                   },
+                   {
+                       "don":  "Lee una carta en nombre de otra persona",
+                       "imagen":  "FichaMensajere.jpg",
+                       "nombre":  "Mensajere",
+                       "id":  "F04"
+                   },
+                   {
+                       "don":  "Descarta una Carta de Situación y roba otra",
+                       "imagen":  "FichaForjadore.jpg",
+                       "nombre":  "Forjadore",
+                       "id":  "F05"
+                   }
+               ],
+    "tablero":  [
+                    {
+                        "tipo":  "inicio",
+                        "posicion":  1
+                    },
+                    {
+                        "tipo":  "pausa",
+                        "posicion":  2
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  3
+                    },
+                    {
+                        "tipo":  "cuidado",
+                        "posicion":  4
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  5
+                    },
+                    {
+                        "tipo":  "tormenta",
+                        "posicion":  6
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  7
+                    },
+                    {
+                        "tipo":  "pausa",
+                        "posicion":  8
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  9
+                    },
+                    {
+                        "tipo":  "pausa",
+                        "posicion":  10
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  11
+                    },
+                    {
+                        "tipo":  "cuidado",
+                        "posicion":  12
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  13
+                    },
+                    {
+                        "tipo":  "tormenta",
+                        "posicion":  14
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  15
+                    },
+                    {
+                        "tipo":  "pausa",
+                        "posicion":  16
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  17
+                    },
+                    {
+                        "tipo":  "pausa",
+                        "posicion":  18
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  19
+                    },
+                    {
+                        "tipo":  "cuidado",
+                        "posicion":  20
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  21
+                    },
+                    {
+                        "tipo":  "tormenta",
+                        "posicion":  22
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  23
+                    },
+                    {
+                        "tipo":  "pausa",
+                        "posicion":  24
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  25
+                    },
+                    {
+                        "tipo":  "pausa",
+                        "posicion":  26
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  27
+                    },
+                    {
+                        "tipo":  "cuidado",
+                        "posicion":  28
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  29
+                    },
+                    {
+                        "tipo":  "tormenta",
+                        "posicion":  30
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  31
+                    },
+                    {
+                        "tipo":  "pausa",
+                        "posicion":  32
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  33
+                    },
+                    {
+                        "tipo":  "pausa",
+                        "posicion":  34
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  35
+                    },
+                    {
+                        "tipo":  "cuidado",
+                        "posicion":  36
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  37
+                    },
+                    {
+                        "tipo":  "tormenta",
+                        "posicion":  38
+                    },
+                    {
+                        "tipo":  "encuentro",
+                        "posicion":  39
+                    },
+                    {
+                        "tipo":  "meta",
+                        "posicion":  40
+                    }
+                ],
+    "teatro":  [
+                   {
+                       "id":  "T01",
+                       "instruccion":  "ACTÚEN ESTA SITUACIÓN SIN HABLAR. Luego, propongan un final de Buen Trato.",
+                       "imagen":  "T01.jpg",
+                       "situacion":  "Tu pareja revisa tu celular mientras dormís y borra conversaciones con tus amigas. Al día siguiente dice que fue \u0027porque te quiere\u0027.",
+                       "zona":  "Emociones",
+                       "titulo":  "El Celular"
+                   },
+                   {
+                       "id":  "T02",
+                       "instruccion":  "ACTÚEN ESTA SITUACIÓN SIN HABLAR. Luego, propongan un final de Buen Trato.",
+                       "imagen":  "T02.jpg",
+                       "situacion":  "Tu pareja te dice que no hables más con tu mejor amiga porque \u0027te llena la cabeza contra mí\u0027.",
+                       "zona":  "Vínculos",
+                       "titulo":  "Tu Amiga Te Llena la Cabeza"
+                   },
+                   {
+                       "id":  "T03",
+                       "instruccion":  "ACTÚEN ESTA SITUACIÓN SIN HABLAR. Luego, propongan un final de Buen Trato.",
+                       "imagen":  "T03.jpg",
+                       "situacion":  "Te dicen que los hombres no lloran y que las mujeres no se enojan.",
+                       "zona":  "Identidad",
+                       "titulo":  "Los Hombres No Lloran"
+                   }
+               ],
+    "mazos":  {
+                  "amarillo":  [
+                                   {
+                                       "id":  "S01",
+                                       "imagen":  "S01.jpg",
+                                       "pregunta":  "¿De quién es el cuerpo? ¿Qué diferencia hay entre \u0027me preocupo por vos\u0027 y \u0027decido por vos\u0027?",
+                                       "situacion":  "Tu pareja te dice que la ropa que te pusiste \u0027provoca\u0027 y te pide que te cambies antes de salir.",
+                                       "zona":  "Cuerpo",
+                                       "titulo":  "La Ropa Provoca"
+                                   },
+                                   {
+                                       "id":  "S02",
+                                       "imagen":  "S02.jpg",
+                                       "pregunta":  "¿Cuándo un comentario sobre el cuerpo se vuelve violencia? ¿Quién define qué cuerpo está bien?",
+                                       "situacion":  "Tu pareja te dice que estás \u0027más gordita/o\u0027 y que \u0027por tu bien\u0027 tenés que hacer dieta.",
+                                       "zona":  "Cuerpo",
+                                       "titulo":  "Por Tu Bien"
+                                   },
+                                   {
+                                       "id":  "S03",
+                                       "imagen":  "S03.jpg",
+                                       "pregunta":  "¿A quién le pertenece la vergüenza cuando falta el agua?",
+                                       "situacion":  "En la toma hay agua solo algunos días. Tu pareja te dice que no te bañes antes de verlo/la \u0027porque se te va a notar que sos de la toma\u0027.",
+                                       "zona":  "Cuerpo",
+                                       "titulo":  "El Agua es de Todos"
+                                   },
+                                   {
+                                       "id":  "S04",
+                                       "imagen":  "S04.jpg",
+                                       "pregunta":  "¿Cómo se acompaña sin decidir por la otra persona?",
+                                       "situacion":  "Una amiga empezó a tomar pastillas para bajar de peso porque su pololo le dijo que estaba \u0027pasada\u0027.",
+                                       "zona":  "Cuerpo",
+                                       "titulo":  "La Pastilla de Mi Amiga"
+                                   },
+                                   {
+                                       "id":  "S05",
+                                       "imagen":  "S05.jpg",
+                                       "pregunta":  "¿Qué pasa con una foto cuando sale de tus manos? ¿Puede alguien \u0027devolvértela\u0027?",
+                                       "situacion":  "Tu pareja te pide una foto íntima: \u0027si me querés, me la mandás\u0027.",
+                                       "zona":  "Cuerpo",
+                                       "titulo":  "Si Me Querés, Mandame la Foto"
+                                   },
+                                   {
+                                       "id":  "S06",
+                                       "imagen":  "S06.jpg",
+                                       "pregunta":  "¿Qué necesita una persona para poder decir \u0027no\u0027 tranquilamente?",
+                                       "situacion":  "Tu pareja decide cuándo tienen relaciones y no acepta un \u0027no\u0027 dicho en voz baja.",
+                                       "zona":  "Cuerpo",
+                                       "titulo":  "No es No"
+                                   },
+                                   {
+                                       "id":  "S07",
+                                       "imagen":  "S07.jpg",
+                                       "pregunta":  "¿Qué hace el cuerpo cuando la cabeza todavía no se anima a decir algo?",
+                                       "situacion":  "Cada vez que vas a verlo/la te duele la guata y te da miedo que se enoje.",
+                                       "zona":  "Cuerpo",
+                                       "titulo":  "Me Duele la Guata"
+                                   },
+                                   {
+                                       "id":  "S08",
+                                       "imagen":  "S08.jpg",
+                                       "pregunta":  "¿Quién decide qué es broma? La broma deja de ser broma cuando alguien dice \u0027no me gusta\u0027.",
+                                       "situacion":  "Tu pareja te pellizca o te empuja \u0027jugando\u0027 delante de otros y a vos te duele.",
+                                       "zona":  "Cuerpo",
+                                       "titulo":  "Era Jugando"
+                                   },
+                                   {
+                                       "id":  "S09",
+                                       "imagen":  "S09.jpg",
+                                       "pregunta":  "¿Los celos son amor? Los celos son una emoción. El control es una conducta.",
+                                       "situacion":  "Tu pareja revisa tu celular mientras dormís y borra conversaciones con tus amigas. Al día siguiente dice que fue \u0027porque te quiere\u0027.",
+                                       "zona":  "Emociones",
+                                       "titulo":  "El Celular"
+                                   },
+                                   {
+                                       "id":  "S10",
+                                       "imagen":  "S10.jpg",
+                                       "pregunta":  "¿A quién le toca cuidar la vida de quién? Esto es chantaje emocional.",
+                                       "situacion":  "Tu pareja te dice: \u0027si me dejás, me mato\u0027.",
+                                       "zona":  "Emociones",
+                                       "titulo":  "Si Me Dejás, Me Mato"
+                                   },
+                                   {
+                                       "id":  "S11",
+                                       "imagen":  "S11.jpg",
+                                       "pregunta":  "¿Cuántas veces se puede repetir \u0027nunca más\u0027? Esto es el ciclo de la violencia.",
+                                       "situacion":  "Después de gritarte y humillarte delante de sus amigos, al día siguiente te trae flores y te jura que nunca más.",
+                                       "zona":  "Emociones",
+                                       "titulo":  "Las Flores del Día Siguiente"
+                                   },
+                                   {
+                                       "id":  "S12",
+                                       "imagen":  "S12.jpg",
+                                       "pregunta":  "¿Se puede reparar sin echarse la culpa de todo?",
+                                       "situacion":  "Discutieron, te dio rabia y le gritaste. Después te sentiste mal.",
+                                       "zona":  "Emociones",
+                                       "titulo":  "Le Grité Yo También"
+                                   },
+                                   {
+                                       "id":  "S13",
+                                       "imagen":  "S13.jpg",
+                                       "pregunta":  "Descalificar para que dudes de tu percepción se llama gaslighting.",
+                                       "situacion":  "Cada vez que reclamás algo, te dicen \u0027loca\u0027, \u0027exagerada\u0027, \u0027tóxica\u0027.",
+                                       "zona":  "Emociones",
+                                       "titulo":  "Estás Loca"
+                                   },
+                                   {
+                                       "id":  "S14",
+                                       "imagen":  "S14.jpg",
+                                       "pregunta":  "¿En pareja hay secretos? La intimidad se elige; el control se impone.",
+                                       "situacion":  "Estás triste y no querés hablar con nadie. Tu pareja insiste en que le contés todo, \u0027porque en pareja no hay secretos\u0027.",
+                                       "zona":  "Emociones",
+                                       "titulo":  "No Quiero Hablar con Nadie"
+                                   },
+                                   {
+                                       "id":  "S15",
+                                       "imagen":  "S15.jpg",
+                                       "pregunta":  "¿Quién sos fuera de esta relación? La dependencia emocional se aprende y se puede desaprender.",
+                                       "situacion":  "Sentís que si esta relación termina, no sos nadie.",
+                                       "zona":  "Emociones",
+                                       "titulo":  "Sin Vos No Soy Nadie"
+                                   },
+                                   {
+                                       "id":  "S16",
+                                       "imagen":  "S16.jpg",
+                                       "pregunta":  "¿Qué hace falta para poder contar algo que da vergüenza?",
+                                       "situacion":  "Lo que pasa en tu casa te da vergüenza y no querés contarlo.",
+                                       "zona":  "Emociones",
+                                       "titulo":  "De Mi Casa No Hablo"
+                                   },
+                                   {
+                                       "id":  "S17",
+                                       "imagen":  "S17.jpg",
+                                       "pregunta":  "¿A quién le conviene que estés sola/o? Aislar es una estrategia de violencia.",
+                                       "situacion":  "Tu pareja te dice que no hables más con tu mejor amiga porque \u0027te llena la cabeza contra mí\u0027.",
+                                       "zona":  "Vínculos",
+                                       "titulo":  "Tu Amiga Te Llena la Cabeza"
+                                   },
+                                   {
+                                       "id":  "S18",
+                                       "imagen":  "S18.jpg",
+                                       "pregunta":  "¿La confianza se verifica o se construye? Si necesita vigilancia, no es confianza.",
+                                       "situacion":  "Tu pareja te exige la contraseña de tus redes \u0027para confiar\u0027.",
+                                       "zona":  "Vínculos",
+                                       "titulo":  "La Contraseña"
+                                   },
+                                   {
+                                       "id":  "S19",
+                                       "imagen":  "S19.jpg",
+                                       "pregunta":  "¿Cuándo una burla deja de ser chiste? La burla sobre el origen es discriminación.",
+                                       "situacion":  "En el grupo de WhatsApp del curso se burlan de tu acento y mandan audios imitándote.",
+                                       "zona":  "Vínculos",
+                                       "titulo":  "Se Burlan de Mi Acento"
+                                   },
+                                   {
+                                       "id":  "S20",
+                                       "imagen":  "S20.jpg",
+                                       "pregunta":  "¿Qué miedos hay detrás de un \u0027no lo acepto\u0027?",
+                                       "situacion":  "Tu mamá no acepta a tu pololo/a porque es migrante (o porque es chileno/a, o de otro barrio).",
+                                       "zona":  "Vínculos",
+                                       "titulo":  "Mi Mamá No Lo Acepta"
+                                   },
+                                   {
+                                       "id":  "S21",
+                                       "imagen":  "S21.jpg",
+                                       "pregunta":  "¿Ayudar a alguien crea una deuda? El apoyo que se cobra no es apoyo.",
+                                       "situacion":  "Tu pareja te dice: \u0027yo te saqué de la calle\u0027, \u0027sin mí no tenés nada\u0027, \u0027yo te mantengo\u0027.",
+                                       "zona":  "Vínculos",
+                                       "titulo":  "Yo Te Saqué de la Calle"
+                                   },
+                                   {
+                                       "id":  "S22",
+                                       "imagen":  "S22.jpg",
+                                       "pregunta":  "¿Cómo se respeta un secreto sin dejar a alguien solo? La violencia no tiene género.",
+                                       "situacion":  "Un amigo te cuenta que su polola le pega y no sabe qué hacer. Te pide que no le cuentes a nadie.",
+                                       "zona":  "Vínculos",
+                                       "titulo":  "A Mi Amigo le Pega su Polola"
+                                   },
+                                   {
+                                       "id":  "S23",
+                                       "imagen":  "S23.jpg",
+                                       "pregunta":  "¿Qué es lo privado en una pareja? Exponer para humillar es violencia.",
+                                       "situacion":  "Tu pareja comparte capturas de sus conversaciones con vos en un grupo, para que se rían.",
+                                       "zona":  "Vínculos",
+                                       "titulo":  "Capturas en el Grupo"
+                                   },
+                                   {
+                                       "id":  "S24",
+                                       "imagen":  "S24.jpg",
+                                       "pregunta":  "¿El que paga decide? El dinero no debería comprar decisiones.",
+                                       "situacion":  "Salen y él/ella paga todo. Después te recuerda que \u0027te mantiene\u0027 cada vez que discuten.",
+                                       "zona":  "Vínculos",
+                                       "titulo":  "Yo Pago Todo"
+                                   },
+                                   {
+                                       "id":  "S25",
+                                       "imagen":  "S25.jpg",
+                                       "pregunta":  "¿Quién decide quién pertenece a un lugar? Existe la Ley 20.609 contra la discriminación.",
+                                       "situacion":  "En el liceo te dicen \u0027torna\u0027 o \u0027volvé a tu país\u0027.",
+                                       "zona":  "Identidad",
+                                       "titulo":  "Volvé a Tu País"
+                                   },
+                                   {
+                                       "id":  "S26",
+                                       "imagen":  "S26.jpg",
+                                       "pregunta":  "¿Quién decide dónde vive una familia? El amor condicionado es control.",
+                                       "situacion":  "Tu pareja te dice que si tu familia se va de la toma, él/ella no te va a seguir.",
+                                       "zona":  "Identidad",
+                                       "titulo":  "Si Te Vas de la Toma, Yo No Te Sigo"
+                                   },
+                                   {
+                                       "id":  "S27",
+                                       "imagen":  "S27.jpg",
+                                       "pregunta":  "¿Qué derechos tenés aunque tu situación migratoria esté irregular?",
+                                       "situacion":  "Tenés miedo de que tu situación migratoria se use en tu contra si denunciás algo.",
+                                       "zona":  "Identidad",
+                                       "titulo":  "Miedo al Papeleo"
+                                   },
+                                   {
+                                       "id":  "S28",
+                                       "imagen":  "S28.jpg",
+                                       "pregunta":  "Nadie debería esconder su origen para pertenecer.",
+                                       "situacion":  "No sabés si decir de dónde venís cuando te preguntan en el liceo.",
+                                       "zona":  "Identidad",
+                                       "titulo":  "No Sé Si Decir de Dónde Vengo"
+                                   },
+                                   {
+                                       "id":  "S29",
+                                       "imagen":  "S29.jpg",
+                                       "pregunta":  "¿Cuántas decisiones tuyas pueden pasar a manos de otra persona antes de que dejes de ser vos?",
+                                       "situacion":  "Tu pareja elige tu ropa, tu música y tu corte de pelo \u0027porque tiene mejor gusto\u0027.",
+                                       "zona":  "Identidad",
+                                       "titulo":  "Yo Elijo Cómo Te Vestís"
+                                   },
+                                   {
+                                       "id":  "S30",
+                                       "imagen":  "S30.jpg",
+                                       "pregunta":  "¿Quién te dijo que no podías? Nadie tiene la última palabra sobre tu vida.",
+                                       "situacion":  "Soñás con estudiar una carrera, pero te dicen \u0027¿para qué, si igual vas a tener guagua?\u0027.",
+                                       "zona":  "Identidad",
+                                       "titulo":  "¿Para Qué Estudiar?"
+                                   },
+                                   {
+                                       "id":  "S31",
+                                       "imagen":  "S31.jpg",
+                                       "pregunta":  "¿Qué emociones se le permiten a cada género? Cuando no se nombran, sale como violencia.",
+                                       "situacion":  "Te dicen que los hombres no lloran y que las mujeres no se enojan.",
+                                       "zona":  "Identidad",
+                                       "titulo":  "Los Hombres No Lloran"
+                                   },
+                                   {
+                                       "id":  "S32",
+                                       "imagen":  "S32.jpg",
+                                       "pregunta":  "¿Quién tiene derecho a decidir quién sos? La identidad es un derecho.",
+                                       "situacion":  "Querés que te llamen de otra forma, o querés cambiar tu forma de ser, y te da miedo lo que digan.",
+                                       "zona":  "Identidad",
+                                       "titulo":  "Quiero Cambiar Mi Nombre"
+                                   },
+                                   {
+                                       "id":  "S33",
+                                       "imagen":  "S33.jpg",
+                                       "pregunta":  "¿Cuándo \u0027cuidarte\u0027 se convierte en \u0027controlarte\u0027?",
+                                       "situacion":  "En la toma no hay luz en la calle. Tu pareja te dice que no salgas \u0027por tu seguridad\u0027, y de paso, que no vayas a ninguna reunión.",
+                                       "zona":  "Comunidad",
+                                       "titulo":  "No Salgas de Noche"
+                                   },
+                                   {
+                                       "id":  "S34",
+                                       "imagen":  "S34.jpg",
+                                       "pregunta":  "¿La violencia en una casa es un tema privado o un tema de todos?",
+                                       "situacion":  "El vecino escucha peleas fuertes en la casa de al lado y no dice nada \u0027porque es tema de pareja\u0027.",
+                                       "zona":  "Comunidad",
+                                       "titulo":  "El Vecino Escucha"
+                                   },
+                                   {
+                                       "id":  "S35",
+                                       "imagen":  "S35.jpg",
+                                       "pregunta":  "¿Qué espacios del barrio son seguros para vos? El buen trato se construye en el barrio.",
+                                       "situacion":  "En la toma hay un espacio comunitario. Nadie lo usa de noche porque no hay luz.",
+                                       "zona":  "Comunidad",
+                                       "titulo":  "La Sede Vacía"
+                                   },
+                                   {
+                                       "id":  "S36",
+                                       "imagen":  "S36.jpg",
+                                       "pregunta":  "¿A quién le conviene que no participes en tu comunidad? Las redes te protegen.",
+                                       "situacion":  "Tu pareja te prohíbe ir a la junta de vecinos porque \u0027ahí se juntan puros sapos\u0027.",
+                                       "zona":  "Comunidad",
+                                       "titulo":  "No Vayas a la Junta"
+                                   },
+                                   {
+                                       "id":  "S37",
+                                       "imagen":  "S37.jpg",
+                                       "pregunta":  "¿Qué pasa con las personas que no tienen una casa segura?",
+                                       "situacion":  "Una dirigenta del barrio te dice que los problemas de pareja \u0027se arreglan en la casa, no en la calle\u0027.",
+                                       "zona":  "Comunidad",
+                                       "titulo":  "Los Problemas se Arreglan en Casa"
+                                   },
+                                   {
+                                       "id":  "S38",
+                                       "imagen":  "S38.jpg",
+                                       "pregunta":  "¿De quién es la culpa del acoso? La culpa nunca es de quien lo recibe.",
+                                       "situacion":  "En la feria te dicen cosas por la calle y tu pareja se enoja con vos, no con quien te acosó.",
+                                       "zona":  "Comunidad",
+                                       "titulo":  "En la Feria"
+                                   },
+                                   {
+                                       "id":  "S39",
+                                       "imagen":  "S39.jpg",
+                                       "pregunta":  "Usar recursos básicos para controlar es violencia.",
+                                       "situacion":  "En la toma el agua es escasa. Tu pareja usa el agua para castigarte: si te enojás, no te deja usar la que trajo.",
+                                       "zona":  "Comunidad",
+                                       "titulo":  "El Agua Como Castigo"
+                                   },
+                                   {
+                                       "id":  "S40",
+                                       "imagen":  "S40.jpg",
+                                       "pregunta":  "¿Qué hace que una persona sea de confianza? Preguntar es cuidarte.",
+                                       "situacion":  "Una persona adulta de confianza te ofrece ayuda, pero no sabés si confiar.",
+                                       "zona":  "Comunidad",
+                                       "titulo":  "¿Confiar o No?"
+                                   }
+                               ],
+                  "verde":  [
+                                {
+                                    "pregunta":  "¿Qué te ayudaría a hacer una pausa?",
+                                    "imagen":  "V01.jpg",
+                                    "titulo":  "El Cerebro en Obra",
+                                    "id":  "V01",
+                                    "texto":  "La corteza prefrontal (freno) está en construcción. Reaccionamos antes de pensar. No es excusa: es información."
+                                },
+                                {
+                                    "pregunta":  "¿Qué cosas aceptaste por no quedar fuera? ¿Valió la pena?",
+                                    "imagen":  "V02.jpg",
+                                    "titulo":  "La Necesidad de Pertenecer",
+                                    "id":  "V02",
+                                    "texto":  "La necesidad de grupo es fortísima. A veces aceptamos cosas por no quedar fuera."
+                                },
+                                {
+                                    "pregunta":  "¿Qué parte de tu identidad estás todavía probando?",
+                                    "imagen":  "V03.jpg",
+                                    "titulo":  "¿Quién Soy?",
+                                    "id":  "V03",
+                                    "texto":  "Construir identidad implica probar, equivocarse, cambiar. No es \u0027estar perdido/a\u0027: es buscarse."
+                                },
+                                {
+                                    "pregunta":  "¿Qué hacés cuando una emoción te desborda?",
+                                    "imagen":  "V04.jpg",
+                                    "titulo":  "Emociones al 100%",
+                                    "id":  "V04",
+                                    "texto":  "Las emociones se sienten con más intensidad. El sistema emocional está a full y el freno todavía no."
+                                },
+                                {
+                                    "pregunta":  "¿Cómo se pide espacio sin que suene a \u0027no te quiero\u0027?",
+                                    "imagen":  "V05.jpg",
+                                    "titulo":  "Necesito mi Espacio",
+                                    "id":  "V05",
+                                    "texto":  "Necesitar privacidad no es rechazar. Es parte de crecer. Las familias a veces lo viven como amenaza."
+                                },
+                                {
+                                    "pregunta":  "¿Qué del amor aprendiste que querés cambiar?",
+                                    "imagen":  "V06.jpg",
+                                    "titulo":  "El Amor que Aprendimos",
+                                    "id":  "V06",
+                                    "texto":  "Amamos como aprendimos: en casa, tele, canciones, barrio. Algunas son buen trato; otras no."
+                                },
+                                {
+                                    "pregunta":  "¿Se puede sentir celos y no controlar?",
+                                    "imagen":  "V07.jpg",
+                                    "titulo":  "Celos No es Amor",
+                                    "id":  "V07",
+                                    "texto":  "Celos = miedo a perder. Amor = forma de relación. Una emoción no decide cómo tratamos al otro."
+                                },
+                                {
+                                    "pregunta":  "¿Conocés alguna historia que haya pasado por este ciclo?",
+                                    "imagen":  "V08.jpg",
+                                    "titulo":  "El Ciclo de la Violencia",
+                                    "id":  "V08",
+                                    "texto":  "Tensión → explosión → \u0027nunca más\u0027 → calma → tensión. Reconocerlo ayuda a entender por qué cuesta salir."
+                                },
+                                {
+                                    "pregunta":  "¿Qué mito del amor te parece más peligroso?",
+                                    "imagen":  "V09.jpg",
+                                    "titulo":  "El Mito del Amor Romántico",
+                                    "id":  "V09",
+                                    "texto":  "Nos enseñaron que el amor todo lo puede y todo lo aguanta. Eso hace que confundamos aguantar con amar."
+                                },
+                                {
+                                    "pregunta":  "¿Qué te da miedo de estar sin pareja?",
+                                    "imagen":  "V10.jpg",
+                                    "titulo":  "El Apego",
+                                    "id":  "V10",
+                                    "texto":  "Cómo nos vincularon en la infancia influye en cómo nos vinculamos ahora. El miedo a estar solo/a puede hacer aceptar cualquier cosa."
+                                },
+                                {
+                                    "pregunta":  "¿Qué te da vergüenza contar? (No hace falta responder en voz alta).",
+                                    "imagen":  "V11.jpg",
+                                    "titulo":  "La Vergüenza que Calla",
+                                    "id":  "V11",
+                                    "texto":  "\u0027Si cuento, van a pensar mal de mí\u0027. La vergüenza protege a la violencia y la sostiene en silencio."
+                                },
+                                {
+                                    "pregunta":  "¿De qué manera lo que extrañás aparece en cómo te vinculás?",
+                                    "imagen":  "V12.jpg",
+                                    "titulo":  "El Duelo Migratorio",
+                                    "id":  "V12",
+                                    "texto":  "Migrar es dejar lugares, personas, costumbres. Hay un duelo que nadie nombra y a veces se descarga en la pareja."
+                                },
+                                {
+                                    "pregunta":  "¿Qué cosas del barrio te estresan y qué cosas te sostienen?",
+                                    "imagen":  "V13.jpg",
+                                    "titulo":  "El Estrés de la Toma",
+                                    "id":  "V13",
+                                    "texto":  "Incertidumbre, desalojo, falta de servicios, hacinamiento. Ese estrés desgasta a cualquiera, y también a las parejas."
+                                },
+                                {
+                                    "pregunta":  "¿A qué cosas te estás sometiendo sin darte cuenta?",
+                                    "imagen":  "V14.jpg",
+                                    "titulo":  "La Rebeldía",
+                                    "id":  "V14",
+                                    "texto":  "La rebeldía es búsqueda de autonomía. El problema no es rebelarse, es rebelarse contra lo que te cuida y obedecer a lo que te daña."
+                                },
+                                {
+                                    "pregunta":  "¿Cómo se pide permiso? ¿Cómo se da? ¿Cómo se retira?",
+                                    "imagen":  "V15.jpg",
+                                    "titulo":  "Consentimiento",
+                                    "id":  "V15",
+                                    "texto":  "Es un sí libre, informado, entusiasta, reversible y específico. El silencio no es un sí. La presión no es un sí."
+                                }
+                            ],
+                  "azul":  [
+                               {
+                                   "pregunta":  "Mi no es una oración completa. Pedir ayuda no es debilidad: es estrategia.",
+                                   "imagen":  "P01.jpg",
+                                   "titulo":  "El NO",
+                                   "id":  "P01",
+                                   "texto":  "Digo NO sin pedir permiso ni dar explicaciones."
+                               },
+                               {
+                                   "pregunta":  "Pedir ayuda no es debilidad: es estrategia.",
+                                   "imagen":  "P02.jpg",
+                                   "titulo":  "La Mano Tendida",
+                                   "id":  "P02",
+                                   "texto":  "Pido ayuda."
+                               },
+                               {
+                                   "pregunta":  "Nombrar es empezar a poder.",
+                                   "imagen":  "P03.jpg",
+                                   "titulo":  "El Nombre de lo que Siento",
+                                   "id":  "P03",
+                                   "texto":  "Digo en voz alta: \u0027esto me hace sentir incómoda/o, triste, enojada/o\u0027."
+                               },
+                               {
+                                   "pregunta":  "El límite no es un castigo, es un mapa de ruta para la relación.",
+                                   "imagen":  "P04.jpg",
+                                   "titulo":  "La Raya en la Arena",
+                                   "id":  "P04",
+                                   "texto":  "Pongo un límite claro: \u0027hasta acá\u0027. Sin gritar, sin amenazar, sin desaparecer."
+                               },
+                               {
+                                   "pregunta":  "Solo escucho. A veces el mejor consejo es el silencio atento.",
+                                   "imagen":  "P05.jpg",
+                                   "titulo":  "La Escucha",
+                                   "id":  "P05",
+                                   "texto":  "Escucho sin interrumpir, sin aconsejar, sin contar mi propia historia."
+                               },
+                               {
+                                   "pregunta":  "No supongas lo que el otro necesita. Preguntar es un acto de amor.",
+                                   "imagen":  "P06.jpg",
+                                   "titulo":  "La Pregunta",
+                                   "id":  "P06",
+                                   "texto":  "Antes de opinar, pregunto: \u0027¿qué necesitás?\u0027."
+                               },
+                               {
+                                   "pregunta":  "Irme no es abandonar: es cuidarme.",
+                                   "imagen":  "P07.jpg",
+                                   "titulo":  "La Puerta",
+                                   "id":  "P07",
+                                   "texto":  "Me voy de una conversación que me hace daño."
+                               },
+                               {
+                                   "pregunta":  "Lo que se dice a una sola persona ya no es un secreto que me come por dentro.",
+                                   "imagen":  "P08.jpg",
+                                   "titulo":  "La Persona de Confianza",
+                                   "id":  "P08",
+                                   "texto":  "Le cuento lo que me pasa a alguien de confianza."
+                               },
+                               {
+                                   "pregunta":  "La prisa es enemiga del cuidado.",
+                                   "imagen":  "P09.jpg",
+                                   "titulo":  "El ¿Cómo Estás? de Verdad",
+                                   "id":  "P09",
+                                   "texto":  "Pregunto \u0027¿cómo estás?\u0027 y espero la respuesta. De verdad."
+                               },
+                               {
+                                   "pregunta":  "Aunque sea incómodo no reírme.",
+                                   "imagen":  "P10.jpg",
+                                   "titulo":  "El Chiste que No Río",
+                                   "id":  "P10",
+                                   "texto":  "No me río de una broma que humilla a alguien."
+                               },
+                               {
+                                   "pregunta":  "La pareja es un equipo, no un dueño y un empleado.",
+                                   "imagen":  "P11.jpg",
+                                   "titulo":  "La Mesa Redonda",
+                                   "id":  "P11",
+                                   "texto":  "Decidimos entre dos. Ninguna decisión sobre la relación la toma una sola persona."
+                               },
+                               {
+                                   "pregunta":  "Pedir perdón no es debilidad, es valentía.",
+                                   "imagen":  "P12.jpg",
+                                   "titulo":  "El Perdón que Repara",
+                                   "id":  "P12",
+                                   "texto":  "Reconozco lo que hice mal y pido disculpas sin \u0027pero\u0027. Sin excusas."
+                               },
+                               {
+                                   "pregunta":  "La confianza no se vigila.",
+                                   "imagen":  "P13.jpg",
+                                   "titulo":  "El Celular Ajeno",
+                                   "id":  "P13",
+                                   "texto":  "No reviso el celular de mi pareja."
+                               },
+                               {
+                                   "pregunta":  "Un no es un no. No es un \u0027tal vez\u0027.",
+                                   "imagen":  "P14.jpg",
+                                   "titulo":  "El No Respetado",
+                                   "id":  "P14",
+                                   "texto":  "Respeto un \u0027no\u0027 la primera vez, sin insistir, sin negociar, sin hacer sentir culpable."
+                               },
+                               {
+                                   "pregunta":  "No tienes que resolverlo todo solo/a.",
+                                   "imagen":  "P15.jpg",
+                                   "titulo":  "La Persona Adulta",
+                                   "id":  "P15",
+                                   "texto":  "Busco a una persona adulta de confianza y le hablo claro."
+                               },
+                               {
+                                   "pregunta":  "Guardar estos números es una forma de cuidarte.",
+                                   "imagen":  "P16.jpg",
+                                   "titulo":  "El Teléfono que Salva",
+                                   "id":  "P16",
+                                   "texto":  "Llamo a un número de ayuda: 1455 (SernamEG), 149 (Carabineros), 147 (niños)."
+                               },
+                               {
+                                   "pregunta":  "Aunque nadie lo lea, escribirlo ya es hacer algo.",
+                                   "imagen":  "P17.jpg",
+                                   "titulo":  "El Cuaderno",
+                                   "id":  "P17",
+                                   "texto":  "Escribo lo que siento."
+                               },
+                               {
+                                   "pregunta":  "Tres respiraciones pueden cambiar una noche.",
+                                   "imagen":  "P18.jpg",
+                                   "titulo":  "La Respiración",
+                                   "id":  "P18",
+                                   "texto":  "Respiro tres veces antes de responder."
+                               },
+                               {
+                                   "pregunta":  "Pensar también es una respuesta.",
+                                   "imagen":  "P19.jpg",
+                                   "titulo":  "El Tiempo",
+                                   "id":  "P19",
+                                   "texto":  "Pido tiempo: \u0027necesito pensarlo\u0027."
+                               },
+                               {
+                                   "pregunta":  "La solidaridad se camina, no se predica.",
+                                   "imagen":  "P20.jpg",
+                                   "titulo":  "La Compañía",
+                                   "id":  "P20",
+                                   "texto":  "Acompaño a alguien a pedir ayuda. No lo mando solo/a: voy con él/ella."
+                               }
+                           ]
+              },
+    "info":  {
+                 "descripcion":  "Juego cooperativo para adolescentes sobre violencia en el pololeo, buen trato y psicología del desarrollo.",
+                 "autor":  "Equipo Educación Popular",
+                 "titulo":  "Corazón de Barrio: El Mapa del Buen Trato",
+                 "version":  "1.0"
+             },
+    "tokens":  {
+                   "agua":  {
+                                "imagen":  "TokenAgua.jpg",
+                                "cantidad":  12,
+                                "funcion":  "Se gasta para usar Poder Personal (Cartas Azules)"
+                            },
+                   "piezas_mapa":  [
+                                       {
+                                           "nombre":  "Cuerpo",
+                                           "imagen":  "PiezaCuerpo.jpg"
+                                       },
+                                       {
+                                           "nombre":  "Emociones",
+                                           "imagen":  "PiezaEmociones.jpg"
+                                       },
+                                       {
+                                           "nombre":  "Vinculos",
+                                           "imagen":  "PiezaVinculos.jpg"
+                                       },
+                                       {
+                                           "nombre":  "Identidad",
+                                           "imagen":  "PiezaIdentidad.jpg"
+                                       },
+                                       {
+                                           "nombre":  "Comunidad",
+                                           "imagen":  "PiezaComunidad.jpg"
+                                       }
+                                   ],
+                   "corazon":  {
+                                   "imagen":  "TokenCorazon.jpg",
+                                   "cantidad":  20,
+                                   "funcion":  "Se juntan de a 2 para ganar 1 Pieza del Mapa"
+                               }
+               }
+}

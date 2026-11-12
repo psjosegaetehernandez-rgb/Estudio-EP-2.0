@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudio EP</title>
+  <meta name="description" content="Taller para crear cartas, fichas, tableros y juegos imprimibles.">
+  <meta name="author" content="Punta Digital y José Luis Gaete">
+  <meta name="theme-color" content="#1e2b2f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&family=Playfair+Display:wght@600;700&family=Patrick+Hand&family=Bebas+Neue&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/app.css?v=2.4.0">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand" aria-label="Estudio EP">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-name">Estudio EP</span>
+      </div>
+      <input id="gameName" class="game-name" aria-label="Nombre del juego" maxlength="120">
+      <div class="tb-group">
+        <button id="undo" class="btn icon" type="button" title="Deshacer (Ctrl + Z)" aria-label="Deshacer"><i class="fa-solid fa-rotate-left"></i></button>
+        <button id="redo" class="btn icon" type="button" title="Rehacer (Ctrl + Y)" aria-label="Rehacer"><i class="fa-solid fa-rotate-right"></i></button>
+      </div>
+      <div class="view-switch" role="group" aria-label="Vista">
+        <button type="button" data-view="mesa"><i class="fa-solid fa-table-cells-large"></i> Mesa de trabajo</button>
+        <button type="button" data-view="print"><i class="fa-solid fa-file-lines"></i> Vista de impresión</button>
+      </div>
+      <span id="saveStatus" class="save-status" aria-live="polite">Guardado</span>
+      <span class="spacer"></span>
+      <button id="helpBtn" class="btn icon" type="button" title="Cómo se usa" aria-label="Cómo se usa"><i class="fa-solid fa-circle-question"></i></button>
+      <button id="aboutBtn" class="btn icon" type="button" title="Acerca de Estudio EP" aria-label="Acerca de"><i class="fa-solid fa-circle-info"></i></button>
+      <button id="printBtn" class="btn primary" type="button" title="Imprimir (Ctrl + P)"><i class="fa-solid fa-print"></i> Imprimir</button>
+    </header>
+
+    <nav id="rail" class="rail" role="tablist" aria-label="Crear">
+      <button type="button" role="tab" data-tab="cartas"><i class="fa-solid fa-clone"></i><span>Cartas</span></button>
+      <button type="button" role="tab" data-tab="tableros"><i class="fa-solid fa-chess-board"></i><span>Tableros</span></button>
+      <button type="button" role="tab" data-tab="fichas"><i class="fa-solid fa-circle-dot"></i><span>Fichas</span></button>
+      <button type="button" role="tab" data-tab="juegos"><i class="fa-solid fa-box-open"></i><span>Juegos</span></button>
+      <button type="button" role="tab" data-tab="catalogo"><i class="fa-solid fa-book-open"></i><span>Catálogo</span></button>
+      <button type="button" role="tab" data-tab="material"><i class="fa-solid fa-folder-open"></i><span>Mi material</span></button>
+      <button type="button" role="tab" data-tab="sesiones"><i class="fa-solid fa-people-group"></i><span>Sesiones</span></button>
+    </nav>
+
+    <aside id="left" class="left" aria-label="Panel para crear"></aside>
+
+    <main class="center">
+      <div id="centerBar" class="center-bar"></div>
+      <div id="mat" class="mat"></div>
+      <div id="preview" class="preview" hidden></div>
+    </main>
+
+    <aside id="editor" class="editor" aria-label="Panel para editar"></aside>
+
+    <footer class="credits">Desarrollado por <strong>Punta Digital</strong> y <strong>José Luis Gaete</strong></footer>
+  </div>
+
+  <div id="print-root" aria-hidden="true"></div>
+  <div id="toasts" class="toasts"></div>
+  <dialog id="dlg" class="dlg"><div id="dlgBody"></div></dialog>
+  <input id="importFile" type="file" accept=".json,application/json" hidden>
+
+  <script src="js/config.js?v=2.4.0"></script>
+  <script src="js/model.js?v=2.4.0"></script>
+  <script src="js/store.js?v=2.4.0"></script>
+  <script src="js/render.js?v=2.4.0"></script>
+  <script src="js/print.js?v=2.4.0"></script>
+  <script src="js/catalog.js?v=2.4.0"></script>
+  <script src="js/material.js?v=2.4.0"></script>
+  <script src="js/importer.js?v=2.4.0"></script>
+  <script src="js/ui.js?v=2.4.0"></script>
+  <script src="js/extras.js?v=2.4.0"></script>
+  <script src="js/drive.js?v=2.4.0"></script>
+  <script src="js/workshop.js?v=2.4.0"></script>
+  <script src="js/app.js?v=2.4.0"></script>
+</body>
+</html>

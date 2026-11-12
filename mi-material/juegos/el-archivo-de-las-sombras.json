@@ -1,0 +1,551 @@
+﻿{
+    "meta":  {
+                 "descripcion":  "Juego de mesa narrativo, cooperativo y de deducción.",
+                 "version":  "1.0",
+                 "dificultad":  "Avanzada",
+                 "duracion":  "90-120 min",
+                 "jugadores":  "2-6",
+                 "autor":  "Sistematización y Educación Popular",
+                 "titulo":  "El Archivo de las Sombras"
+             },
+    "tableros":  [
+                     {
+                         "prompt_ia":  "T_Base_Blackthorn.png",
+                         "nombre":  "Mapa de Nodos (Blackthorn)",
+                         "tipo":  "Base",
+                         "id":  "T01",
+                         "formato":  "3:2"
+                     },
+                     {
+                         "prompt_ia":  "Matriz.png",
+                         "nombre":  "Matriz de Deducción",
+                         "tipo":  "Auxiliar",
+                         "id":  "T02",
+                         "formato":  "4:3"
+                     },
+                     {
+                         "prompt_ia":  "Reloj.png",
+                         "nombre":  "Reloj de Arena (Tiempo)",
+                         "tipo":  "Auxiliar",
+                         "id":  "T03",
+                         "formato":  "4:3"
+                     },
+                     {
+                         "prompt_ia":  "T_Ciencia_Laboratorio.png",
+                         "nombre":  "Laboratorio de Prometeo",
+                         "tipo":  "Ciencia",
+                         "id":  "T04",
+                         "formato":  "3:2"
+                     },
+                     {
+                         "prompt_ia":  "T_Magia_Bosque.png",
+                         "nombre":  "El Bosque de las Trece Brujas",
+                         "tipo":  "Magia",
+                         "id":  "T05",
+                         "formato":  "3:2"
+                     },
+                     {
+                         "prompt_ia":  "T_Magia_Biblioteca.png",
+                         "nombre":  "Biblioteca de los Eternos",
+                         "tipo":  "Magia",
+                         "id":  "T06",
+                         "formato":  "3:2"
+                     },
+                     {
+                         "prompt_ia":  "T_Ciencia_Catacumbas.png",
+                         "nombre":  "Catacumbas Industriales",
+                         "tipo":  "Ciencia",
+                         "id":  "T07",
+                         "formato":  "3:2"
+                     }
+                 ],
+    "personajes":  [
+                       {
+                           "id":  "P01",
+                           "nombre":  "Arthur Pendelton",
+                           "poder":  "Deducción Fría (Predecir Acontecimiento)",
+                           "juego":  "Base",
+                           "habilidad":  "Revisar una pista descartada",
+                           "rol":  "El Detective",
+                           "prompt_ia":  "P_Base_Detective.png"
+                       },
+                       {
+                           "id":  "P02",
+                           "nombre":  "Dra. Elara Vance",
+                           "poder":  "Análisis Rápido (Evidencia a distancia)",
+                           "juego":  "Base",
+                           "habilidad":  "Identificar sustancias",
+                           "rol":  "La Científica",
+                           "prompt_ia":  "P_Base_Cientifica.png"
+                       },
+                       {
+                           "id":  "P03",
+                           "nombre":  "Lady Seraphina",
+                           "poder":  "Visión del Velo (Ver Incógnita)",
+                           "juego":  "Base",
+                           "habilidad":  "Interpretar rituales sin coste",
+                           "rol":  "La Ocultista",
+                           "prompt_ia":  "P_Base_Ocultista.png"
+                       },
+                       {
+                           "id":  "P04",
+                           "nombre":  "Prof. Alistair Finch",
+                           "poder":  "Memoria del Archivo (Recuperar Grimorio)",
+                           "juego":  "Base",
+                           "habilidad":  "Descifrar documentos",
+                           "rol":  "El Historiador",
+                           "prompt_ia":  "P_Base_Historiador.png"
+                       },
+                       {
+                           "id":  "P05",
+                           "nombre":  "Dr. Silas Thorne",
+                           "poder":  "Cirugía de Campo (Curar Corrupción)",
+                           "juego":  "Base",
+                           "habilidad":  "Analizar cadáveres",
+                           "rol":  "El Médico",
+                           "prompt_ia":  "P_Base_Medico.png"
+                       },
+                       {
+                           "id":  "P06",
+                           "nombre":  "Jasper Reed",
+                           "poder":  "Titular Sensacionalista (Redirigir sospecha)",
+                           "juego":  "Base",
+                           "habilidad":  "Obtener testimonios",
+                           "rol":  "El Periodista",
+                           "prompt_ia":  "P_Base_Periodista.png"
+                       },
+                       {
+                           "id":  "P07",
+                           "nombre":  "Helena von Nacht",
+                           "poder":  "Doble Realidad (Desviar Acontecimiento)",
+                           "juego":  "Magia",
+                           "habilidad":  "Reflejo Imposible",
+                           "rol":  "Hechicera del Espejo",
+                           "prompt_ia":  "P_Magia_Helena.png"
+                       },
+                       {
+                           "id":  "P08",
+                           "nombre":  "Alistair Crowe",
+                           "poder":  "Quinta Esencia (Neutralizar Maldición)",
+                           "juego":  "Magia",
+                           "habilidad":  "Materia Mutable",
+                           "rol":  "Alquimista de Cenizas",
+                           "prompt_ia":  "P_Magia_Alquimista.png"
+                       },
+                       {
+                           "id":  "P09",
+                           "nombre":  "Padre Ezekiel",
+                           "poder":  "Expulsión (Destierra Criatura)",
+                           "juego":  "Magia",
+                           "habilidad":  "Voluntad Inquebrantable",
+                           "rol":  "El Exorcista",
+                           "prompt_ia":  "P_Magia_Exorcista.png"
+                       },
+                       {
+                           "id":  "P10",
+                           "nombre":  "Lucien Moreau",
+                           "poder":  "Hipnosis (Interrogar Sospechoso)",
+                           "juego":  "Magia",
+                           "habilidad":  "La Mano Invisible",
+                           "rol":  "El Ilusionista",
+                           "prompt_ia":  "P_Magia_Ilusionista.png"
+                       },
+                       {
+                           "id":  "P11",
+                           "nombre":  "Morgana Blackthorn",
+                           "poder":  "Pacto Vegetal (Inmovilizar Criatura)",
+                           "juego":  "Magia",
+                           "habilidad":  "Lenguaje de Raíces",
+                           "rol":  "Guardiana del Bosque",
+                           "prompt_ia":  "P_Magia_Guardiana.png"
+                       },
+                       {
+                           "id":  "P12",
+                           "nombre":  "Isolde Ravenshade",
+                           "poder":  "Página Perdida (Desbloquear Incógnita)",
+                           "juego":  "Magia",
+                           "habilidad":  "Memoria Antigua",
+                           "rol":  "Bibliotecaria del Vacío",
+                           "prompt_ia":  "P_Magia_Bibliotecaria.png"
+                       },
+                       {
+                           "id":  "P13",
+                           "nombre":  "Dra. Eleanor Whitmore",
+                           "poder":  "Resonancia (Revelar Evidencia)",
+                           "juego":  "Ciencia",
+                           "habilidad":  "Percepción Electromagnética",
+                           "rol":  "La Física",
+                           "prompt_ia":  "P_Ciencia_Fisica.png"
+                       },
+                       {
+                           "id":  "P14",
+                           "nombre":  "Nikolaus Adler",
+                           "poder":  "Improvisación (Crear dispositivo)",
+                           "juego":  "Ciencia",
+                           "habilidad":  "Reparación Experta",
+                           "rol":  "El Ingeniero",
+                           "prompt_ia":  "P_Ciencia_Ingeniero.png"
+                       },
+                       {
+                           "id":  "P15",
+                           "nombre":  "Dra. Beatrice Holloway",
+                           "poder":  "Reconstrucción (Secuencia de lesión)",
+                           "juego":  "Ciencia",
+                           "habilidad":  "Observación Clínica",
+                           "rol":  "La Anatomista",
+                           "prompt_ia":  "P_Ciencia_Anatomista.png"
+                       },
+                       {
+                           "id":  "P16",
+                           "nombre":  "Prof. Adrian Volkov",
+                           "poder":  "Cálculo Predictivo (Ver Acontecimiento)",
+                           "juego":  "Ciencia",
+                           "habilidad":  "Deducción Estadística",
+                           "rol":  "El Matemático",
+                           "prompt_ia":  "P_Ciencia_Matematico.png"
+                       },
+                       {
+                           "id":  "P17",
+                           "nombre":  "Camille Laurent",
+                           "poder":  "Reactivo Universal (Revelar Pista)",
+                           "juego":  "Ciencia",
+                           "habilidad":  "Análisis Químico",
+                           "rol":  "La Química",
+                           "prompt_ia":  "P_Ciencia_Quimica.png"
+                       },
+                       {
+                           "id":  "P18",
+                           "nombre":  "Dr. Samuel Graves",
+                           "poder":  "Reconstrucción Mental (Examinar recuerdo)",
+                           "juego":  "Ciencia",
+                           "habilidad":  "Memoria Asociativa",
+                           "rol":  "El Neurólogo",
+                           "prompt_ia":  "P_Ciencia_Neurologo.png"
+                       }
+                   ],
+    "tokens":  [
+                   {
+                       "prompt_ia":  "TK_Evidencia.png",
+                       "nombre":  "Evidencia",
+                       "tipo":  "Base",
+                       "id":  "TK01",
+                       "tamano":  "35mm"
+                   },
+                   {
+                       "prompt_ia":  "TK_Tiempo.png",
+                       "nombre":  "Tiempo",
+                       "tipo":  "Base",
+                       "id":  "TK02",
+                       "tamano":  "25mm"
+                   },
+                   {
+                       "prompt_ia":  "TK_Corrupcion.png",
+                       "nombre":  "Corrupción",
+                       "tipo":  "Magia",
+                       "id":  "TK03",
+                       "tamano":  "25mm"
+                   },
+                   {
+                       "prompt_ia":  "TK_Energia.png",
+                       "nombre":  "Energía Arcana",
+                       "tipo":  "Magia",
+                       "id":  "TK04",
+                       "tamano":  "30mm"
+                   },
+                   {
+                       "prompt_ia":  "TK_Cobre.png",
+                       "nombre":  "Cobre",
+                       "tipo":  "Ciencia",
+                       "id":  "TK05",
+                       "tamano":  "30mm"
+                   },
+                   {
+                       "prompt_ia":  "TK_Electricidad.png",
+                       "nombre":  "Electricidad",
+                       "tipo":  "Ciencia",
+                       "id":  "TK06",
+                       "tamano":  "30mm"
+                   }
+               ],
+    "mazos":  {
+                  "pistas":  [
+                                 {
+                                     "prompt_ia":  "C_B01.png",
+                                     "nombre":  "Sangre y Reloj Roto",
+                                     "tipo":  "Física",
+                                     "id":  "C_B01",
+                                     "texto":  "Revela hora del crimen. Combo: + Diario."
+                                 },
+                                 {
+                                     "prompt_ia":  "C_B02.png",
+                                     "nombre":  "Carta Cifrada",
+                                     "tipo":  "Documental",
+                                     "id":  "C_B02",
+                                     "texto":  "Cuesta 1 PA descifrarla. Combo: + Llave."
+                                 },
+                                 {
+                                     "prompt_ia":  "C_B03.png",
+                                     "nombre":  "Rosa Negra",
+                                     "tipo":  "Simbólica",
+                                     "id":  "C_B03",
+                                     "texto":  "Símbolo del Círculo. Combo: + Medallón."
+                                 },
+                                 {
+                                     "prompt_ia":  "C_B04.png",
+                                     "nombre":  "Huella de Bota",
+                                     "tipo":  "Forense",
+                                     "id":  "C_B04",
+                                     "texto":  "Identifica calzado. Combo: + Anteojos."
+                                 },
+                                 {
+                                     "prompt_ia":  "C_B05.png",
+                                     "nombre":  "Frasco de Veneno",
+                                     "tipo":  "Química",
+                                     "id":  "C_B05",
+                                     "texto":  "Identifica arsénico. Combo: + Kit Análisis."
+                                 },
+                                 {
+                                     "prompt_ia":  "C_B06.png",
+                                     "nombre":  "Llave de Latón",
+                                     "tipo":  "Física",
+                                     "id":  "C_B06",
+                                     "texto":  "Abre compartimento. Combo: + Carta Cifrada."
+                                 },
+                                 {
+                                     "prompt_ia":  "C_B07.png",
+                                     "nombre":  "Diario Manchado",
+                                     "tipo":  "Documental",
+                                     "id":  "C_B07",
+                                     "texto":  "Confesión. Combo: + Reloj."
+                                 },
+                                 {
+                                     "prompt_ia":  "C_B08.png",
+                                     "nombre":  "Medallón de Plata",
+                                     "tipo":  "Simbólica",
+                                     "id":  "C_B08",
+                                     "texto":  "Identifica al Círculo. Combo: + Rosa Negra."
+                                 },
+                                 {
+                                     "prompt_ia":  "C_B09.png",
+                                     "nombre":  "Cuchillo Ritual",
+                                     "tipo":  "Física",
+                                     "id":  "C_B09",
+                                     "texto":  "Arma del crimen. Combo: + Sangre."
+                                 },
+                                 {
+                                     "prompt_ia":  "C_B10.png",
+                                     "nombre":  "Mapa Blackthorn",
+                                     "tipo":  "Documental",
+                                     "id":  "C_B10",
+                                     "texto":  "Revela rutas. Combo: + Habitación Imposible."
+                                 }
+                             ],
+                  "hechizos":  [
+                                   {
+                                       "id":  "M_EV01",
+                                       "nombre":  "Llama de Azrael",
+                                       "prompt_ia":  "M_EV01.png",
+                                       "disciplina":  "Evocación",
+                                       "efecto":  "Ilumina y revela marcas.",
+                                       "coste":  "2 E, +1 C"
+                                   },
+                                   {
+                                       "id":  "M_EV02",
+                                       "nombre":  "Rayo Carmesí",
+                                       "prompt_ia":  "M_EV02.png",
+                                       "disciplina":  "Evocación",
+                                       "efecto":  "Desactiva barreras.",
+                                       "coste":  "3 E, +2 C"
+                                   },
+                                   {
+                                       "id":  "M_IL01",
+                                       "nombre":  "Espejo de los Mentidos",
+                                       "prompt_ia":  "M_IL01.png",
+                                       "disciplina":  "Ilusionismo",
+                                       "efecto":  "Revela contradicciones.",
+                                       "coste":  "1 E, +1 C"
+                                   },
+                                   {
+                                       "id":  "M_IL02",
+                                       "nombre":  "Rostro Prestado",
+                                       "prompt_ia":  "M_IL02.png",
+                                       "disciplina":  "Ilusionismo",
+                                       "efecto":  "Accede a zonas restringidas.",
+                                       "coste":  "2 E, +1 C"
+                                   },
+                                   {
+                                       "id":  "M_AL01",
+                                       "nombre":  "Transmutación Menor",
+                                       "prompt_ia":  "M_AL01.png",
+                                       "disciplina":  "Alquimia",
+                                       "efecto":  "Convierte recursos.",
+                                       "coste":  "1 E, +0 C"
+                                   },
+                                   {
+                                       "id":  "M_NI01",
+                                       "nombre":  "Voz del Sepulcro",
+                                       "prompt_ia":  "M_NI01.png",
+                                       "disciplina":  "Nigromancia",
+                                       "efecto":  "Recuerdo de un difunto.",
+                                       "coste":  "2 E, +1 C"
+                                   },
+                                   {
+                                       "id":  "M_HE01",
+                                       "nombre":  "Raíces Vigilantes",
+                                       "prompt_ia":  "M_HE01.png",
+                                       "disciplina":  "Herbolaria",
+                                       "efecto":  "Detecta movimientos.",
+                                       "coste":  "1 E, +0 C"
+                                   },
+                                   {
+                                       "id":  "M_AS01",
+                                       "nombre":  "Mapa Constelaciones",
+                                       "prompt_ia":  "M_AS01.png",
+                                       "disciplina":  "Astromancia",
+                                       "efecto":  "Revela localización secreta.",
+                                       "coste":  "2 E, +0 C"
+                                   },
+                                   {
+                                       "id":  "M_PR01",
+                                       "nombre":  "Sello de Salomón",
+                                       "prompt_ia":  "M_PR01.png",
+                                       "disciplina":  "Protección",
+                                       "efecto":  "Bloquea entidades.",
+                                       "coste":  "2 E, +0 C"
+                                   }
+                               ],
+                  "inventos":  [
+                                   {
+                                       "id":  "C_FI01",
+                                       "nombre":  "Detector Electromagnético",
+                                       "rama":  "Física",
+                                       "efecto":  "Detecta mecanismos.",
+                                       "prompt_ia":  "C_FI01.png",
+                                       "coste":  "2 Cobre"
+                                   },
+                                   {
+                                       "id":  "C_FI03",
+                                       "nombre":  "Lámpara Ultravioleta",
+                                       "rama":  "Física",
+                                       "efecto":  "Revela marcas invisibles.",
+                                       "prompt_ia":  "C_FI03.png",
+                                       "coste":  "2 Cobre, 1 E"
+                                   },
+                                   {
+                                       "id":  "C_QU01",
+                                       "nombre":  "Kit Molecular",
+                                       "rama":  "Química",
+                                       "efecto":  "Identifica componentes.",
+                                       "prompt_ia":  "C_QU01.png",
+                                       "coste":  "2 Cobre"
+                                   },
+                                   {
+                                       "id":  "C_BI01",
+                                       "nombre":  "Microscopio Precisión",
+                                       "rama":  "Biología",
+                                       "efecto":  "Revela detalles biológicos.",
+                                       "prompt_ia":  "C_BI01.png",
+                                       "coste":  "2 Cobre"
+                                   },
+                                   {
+                                       "id":  "C_IN01",
+                                       "nombre":  "Llave Universal",
+                                       "rama":  "Ingeniería",
+                                       "efecto":  "Abre mecanismos.",
+                                       "prompt_ia":  "C_IN01.png",
+                                       "coste":  "2 Cobre"
+                                   },
+                                   {
+                                       "id":  "C_MA01",
+                                       "nombre":  "Máquina Diferencial",
+                                       "rama":  "Matemáticas",
+                                       "efecto":  "Resuelve secuencias.",
+                                       "prompt_ia":  "C_MA01.png",
+                                       "coste":  "3 Cobre"
+                                   },
+                                   {
+                                       "id":  "C_AS01",
+                                       "nombre":  "Telescopio Portátil",
+                                       "rama":  "Astronomía",
+                                       "efecto":  "Examina señales.",
+                                       "prompt_ia":  "C_AS01.png",
+                                       "coste":  "2 Cobre"
+                                   }
+                               ],
+                  "criaturas":  [
+                                    {
+                                        "prompt_ia":  "CR_01.png",
+                                        "nombre":  "El Hombre sin Rostro",
+                                        "amenaza":  "Amenaza 3",
+                                        "id":  "CR_01",
+                                        "efecto":  "Se supera con 1 Evidencia y 2 Pistas."
+                                    },
+                                    {
+                                        "prompt_ia":  "CR_02.png",
+                                        "nombre":  "El Guardián del Espejo",
+                                        "amenaza":  "Amenaza 4",
+                                        "id":  "CR_02",
+                                        "efecto":  "Se supera con 2 Hechizos de Ilusionismo."
+                                    },
+                                    {
+                                        "prompt_ia":  "CR_03.png",
+                                        "nombre":  "La Dama de Ceniza",
+                                        "amenaza":  "Amenaza 2",
+                                        "id":  "CR_03",
+                                        "efecto":  "Se supera con 2 Hechizos de Nigromancia."
+                                    },
+                                    {
+                                        "prompt_ia":  "CR_04.png",
+                                        "nombre":  "El Cuervo Negro",
+                                        "amenaza":  "Amenaza 1",
+                                        "id":  "CR_04",
+                                        "efecto":  "Se supera con 1 Pista o 1 Invento."
+                                    },
+                                    {
+                                        "prompt_ia":  "CR_05.png",
+                                        "nombre":  "El Homúnculo",
+                                        "amenaza":  "Amenaza 3",
+                                        "id":  "CR_05",
+                                        "efecto":  "Se supera con 1 Invento de Química."
+                                    }
+                                ],
+                  "objetos":  [
+                                  {
+                                      "prompt_ia":  "OB_01.png",
+                                      "nombre":  "Ganzúas",
+                                      "id":  "OB_01",
+                                      "efecto":  "Abre cerraduras simples. Cuesta 1 PA."
+                                  },
+                                  {
+                                      "prompt_ia":  "OB_02.png",
+                                      "nombre":  "Cuerda de Seda",
+                                      "id":  "OB_02",
+                                      "efecto":  "Desciende por muros. Evita 1 tirada de dado."
+                                  },
+                                  {
+                                      "prompt_ia":  "OB_03.png",
+                                      "nombre":  "Lámpara de Aceite",
+                                      "id":  "OB_03",
+                                      "efecto":  "Ilumina un Nodo oscuro por 1 turno."
+                                  },
+                                  {
+                                      "prompt_ia":  "OB_04.png",
+                                      "nombre":  "Falsificación",
+                                      "id":  "OB_04",
+                                      "efecto":  "Pasa por un documento oficial. +1 a Influencia."
+                                  },
+                                  {
+                                      "prompt_ia":  "OB_05.png",
+                                      "nombre":  "Soborno",
+                                      "id":  "OB_05",
+                                      "efecto":  "Gasta 1 Token de Influencia para comprar Testimonio."
+                                  }
+                              ],
+                  "incognitas":  [
+
+                                 ],
+                  "acontecimientos":  [
+
+                                      ]
+              }
+}
